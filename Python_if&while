@@ -1,0 +1,268 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP9iSVLpxHwPpQzpl+njgFi",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kkdongeug/ABCD-A/blob/20250329/Python_if%26while\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qg7_L_6oWK7L",
+        "outputId": "030e6cd1-2b9c-4738-80a0-fd5bc8af31f7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름이 맞습니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "name = \"BlockDMask\"\n",
+        "if name == \"BlockDMask\":\n",
+        "  print(\"이름이 맞습니다.\")\n",
+        "else:\n",
+        "  print(\"이름이 다릅니다.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pocket = 1000\n",
+        "if pocket == 1000:\n",
+        "  print(\"복권 구매\")\n",
+        "elif pocket == 500:\n",
+        "  print(\"껌 구매\");\n",
+        "else:\n",
+        "  print(\"집이나 가자\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KXr37vSbWN60",
+        "outputId": "018dcf29-3266-4a37-840e-1e6deb3ee408"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "복권 구매\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = \"사과\"\n",
+        "b = \"바나나\"\n",
+        "c =  \"치즈\"\n",
+        "if a == \"사과\" or b == \"바나나\":\n",
+        "    print(\"사과 이거나 바나나 입니다.\")\n",
+        "if a == \"사과\" and b == \"바나나\":\n",
+        "    print(\"사과 이고 바나나 입니다.\")\n",
+        "if not a == \"사과\":\n",
+        "    print(\"사과가 어니어야 출력 됩니다.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wobNFxPPWOAa",
+        "outputId": "662c4d84-0cf0-4db7-cf11-797c4496ea4e"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "사과 이거나 바나나 입니다.\n",
+            "사과 이고 바나나 입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "p_class = \"Z\"\n",
+        "sel_amount = 79900\n",
+        "\n",
+        "if p_class == \"A\":\n",
+        "    sel_amount *= 0.7 # 55930.0\n",
+        "    print(f'판매가는 {sel_amount}원 입니다.')\n",
+        "elif p_class == \"B\": # 67915.0\n",
+        "    sel_amount *= 0.85\n",
+        "    print(f'판매가는 {sel_amount}원 입니다.')\n",
+        "elif p_class == \"C\": # 73508.0\n",
+        "    sel_amount *= 0.92\n",
+        "    print(f'판매가는 {sel_amount}원 입니다.')\n",
+        "elif p_class == \"Z\": # 84911\n",
+        "    sel_amount += 5000\n",
+        "    print(f'판매가는 {sel_amount}원 입니다.')\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ej7BN-iaWOGD",
+        "outputId": "441ae26c-62cd-408c-8c12-38f778b22208"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "판매가는 84900원 입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "treeHit = 0\n",
+        "\n",
+        "while treeHit < 10:\n",
+        "    treeHit = treeHit +1\n",
+        "    print(\"나무를 %d번 찍었습니다.\" % treeHit)\n",
+        "    if treeHit == 10:\n",
+        "        print(\"나무가 넘어갑니다.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vMJvwnMNWOMj",
+        "outputId": "3987bc06-168c-4f27-e25c-be51c5d2fb4a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "나무를 1번 찍었습니다.\n",
+            "나무를 2번 찍었습니다.\n",
+            "나무를 3번 찍었습니다.\n",
+            "나무를 4번 찍었습니다.\n",
+            "나무를 5번 찍었습니다.\n",
+            "나무를 6번 찍었습니다.\n",
+            "나무를 7번 찍었습니다.\n",
+            "나무를 8번 찍었습니다.\n",
+            "나무를 9번 찍었습니다.\n",
+            "나무를 10번 찍었습니다.\n",
+            "나무가 넘어갑니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "coffee = 10\n",
+        "money = 300\n",
+        "while money:\n",
+        "    print(\"돈을 받았으니 커피를 줍니다\")\n",
+        "    coffee = coffee -1\n",
+        "    #break를 쓰면 여기서 멈춤\n",
+        "    print(\"남은 커피의 양은 %d개입니다.\" % coffee)\n",
+        "    if coffee == 0:\n",
+        "        print(\"커피가 다 떨어졌습니다. 판매를 중지합니다.\")\n",
+        "        break # while 조건문을 중지하고 싶을 때 사용하는 함수"
+      ],
+      "metadata": {
+        "id": "NHHK2ysUWOR0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "    print(\"Ctrl+C를 눌러야 while문을 빠져나갈 수 있습니다.\")"
+      ],
+      "metadata": {
+        "id": "GhVTfZxKXJfI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1번 방법\n",
+        "i = 0\n",
+        "result1 = 0\n",
+        "while i < 100:\n",
+        "    i = i + 1\n",
+        "    if i % 2 == 0:\n",
+        "        print('1번 방법 : {0} {1}'.format(i,result1))\n",
+        "        result1 = result1 + i\n",
+        "\n",
+        "print('1번 방법 : {0}'.format(result1))"
+      ],
+      "metadata": {
+        "id": "Y8sVSbMMXJdJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2번 방법 (break 함수)\n",
+        "j = 0\n",
+        "result2 = 0\n",
+        "while True:\n",
+        "    if j > 100:\n",
+        "        break\n",
+        "\n",
+        "    j = j + 1\n",
+        "    if j % 2 == 0:\n",
+        "        result2 = result2 + j\n",
+        "        print('2번 방법 (break) : {0}'.format(result2))"
+      ],
+      "metadata": {
+        "id": "srOERbPQXPCY"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
